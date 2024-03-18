@@ -1,0 +1,55 @@
+\question Em uma padaria foi feita uma pesquisa para verificar o consumo de leite e de pão nos primeiros dez dias do mês de janeiro. Foram levantados os seguintes valores diários:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        Consumo de leite (litros) & 25 & 26 & 30 & 30 & 28 & 23 & 25 & 29 & 34 & 30 \\
+        \hline
+        Consumo de pão (Kg)       & 31 & 40 & 36 & 39 & 39 & 40 & 42 & 38 & 39 & 41 \\
+        \hline
+    \end{tabular}
+\end{table}
+\begin{parts}
+    \part Em média, qual foi o produto mais consumido nesses dias?
+    \begin{solution}
+        \begin{equation*}
+            \begin{aligned}
+                \overline{X}_{leite} & = \frac{\sum_{n}^{i = i}}{n}                                      \\
+                                     & = \frac{25 + 26 + 30 + 30 + 28 + 23 + 25 + 29 + 34 + 30}{10} = 28 \\
+            \end{aligned}
+        \end{equation*}
+        \begin{equation*}
+            \begin{aligned}
+                \overline{X}_{p\tilde{a}o} & = \frac{\sum_{n}^{i = i}}{n}                                        \\
+                                           & = \frac{31 + 40 + 36 + 39 + 39 + 40 + 42 + 38 + 39 + 41}{10} = 38.5 \\
+            \end{aligned}
+        \end{equation*}
+
+        Assim podemos ver que, em média o consumo de pão foi maior.
+    \end{solution}
+
+    \pagebreak
+
+    \part Qual dos produtos teve maior variação no consumo, justifique sua resposta.
+    \begin{solution}
+        A variação será dada através do \textbf{coeficiente de variação (CV)} tendo a fórmula:
+        \begin{equation*}
+            \begin{aligned}
+                CV           & = \frac{s}{\overline{X}} \times 100;                          \\
+                s            & = \sqrt{\frac{\sum_{n}^{i = 1}(X_{i} - \overline{X})^{2}}{n}} \\
+                \overline{X} & = \frac{\sum_{n}^{i = i}}{n}
+            \end{aligned}
+        \end{equation*}
+
+        Assim temos:
+
+        \begin{equation*}
+            \begin{aligned}
+                s_{leite} = 3.265986 \ \overline{X} = 28 \therefore    \\ CV_{leite} = \frac{3.265986}{28} \times 100 = 11.66424\% \approx 11.66\%  \\
+                s_{p\tilde{a}o} = 3.100179 \ \overline{X} = 38.5 \therefore \\ CV_{p\tilde{a}o} = \frac{3.100179}{38.5} \times 100 = 8.051948\% \approx 8.05\%
+            \end{aligned}
+        \end{equation*}
+
+        Dessa forma temos um CV maior para o leite, logo o \textbf{leite teve maior variação no consumo}.
+    \end{solution}
+\end{parts}

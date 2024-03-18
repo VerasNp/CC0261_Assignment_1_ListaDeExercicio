@@ -1,0 +1,8 @@
+% Mark intersections in the graph
+\newcommand*{\ShowIntersections}[3]{
+\fill 
+    [name intersections={of=#1 and #2, name=i, total=\t}] 
+    [black, opacity=1] 
+    \foreach \s in {1,...,\t}{(i-\s) circle (2pt)
+        node [above left] {$#3_\s$}};
+}
