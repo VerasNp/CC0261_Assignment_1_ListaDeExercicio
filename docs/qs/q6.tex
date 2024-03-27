@@ -1,0 +1,63 @@
+\question Vinte e seis trabalhadores de plataformas de petr´oleo offshore participaram de um exercício de fuga simulado, resultando nos dados a seguir (em segundos) para concluir a fuga:
+\begin{parts}
+    \part  Construa um diagrama de ramos-e-folhas dos dados. Como ele sugere que a média e mediana serão comparadas?
+    \begin{solution}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{r|l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}}
+                32  &5 &5\\
+                33  &4 &9\\
+                34  \\
+                35  &6 &6 &9 &9\\
+                36  &3 &4 &4 &6 &9\\
+                37  &0 &3 &3 &4 &5\\
+                38  &9\\
+                39  &2 &3 &4 &7\\
+                40  &2 &3\\
+                41  \\
+                42  &4\\
+            \end{tabular}
+        \end{table}
+
+        Assim teremos:
+
+        \begin{equation*}
+            \begin{split}
+                \overline{X}  & = 370.6923 \\
+                M_d & = 369.5
+            \end{split}
+        \end{equation*}
+    \end{solution}
+
+    \part   Calcule os valores da média ($\overline{x}$) e da mediana ($M_d$) amostrais. Dica: $\sum{xi} = 9638$.
+    \begin{solution}
+        Primeiro é necessário fazer a ordenação desses valores, assim teremos:
+        \begin{equation*}
+            \begin{split}
+                \overline{x} & = \frac{\sum{x_i}}{n} = \frac{9638}{26} = 370.6923                                                                \\
+            \end{split}
+        \end{equation*}
+    Dado a presença de 26 observações, um número par, temos que a mediana será a média dos dois valores centrais:
+                \begin{equation*}
+                    \begin{split}
+                M_d          & = \frac{x_{13} + x_{14}}{2} = \frac{369 + 370}{2} = 369.5
+            \end{split}
+        \end{equation*}
+    \end{solution}
+
+    \part Em quantos segundos o maior tempo, atualmente 424, pode ser aumentado sem afetar o valor da mediana amostral?
+    \begin{solution}
+        ?
+    \end{solution}
+
+    \part Quais são os valores de $\overline{x}$ e $M_d$ quando as observações são expressas em minutos?
+    \begin{solution}
+        Ao transformar todos os valores em minutos, teremos:
+        \begin{equation*}
+            \begin{split}
+                \overline{X}  & = 6.178077 \\
+                M_d & = 6.155
+            \end{split}
+        \end{equation*}
+    \end{solution}
+\end{parts}
