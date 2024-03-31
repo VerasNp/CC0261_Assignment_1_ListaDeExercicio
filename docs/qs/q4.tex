@@ -111,8 +111,46 @@
             \includegraphics[width=8cm]{./../src/output/03212024_Output_HistogramaDurezaAluminio.pdf}
         \end{figure}
     \end{solution}
-    \part Faça o box-plot dos dados. Existem outliers?
+    \part Faça o box-plot \footnote{Gráfico que relaciona medidas descritivas: máximo, mínimo, mediana (segundo quartil), primeiro e terceiro quartil} dos dados. Existem outliers?
     \begin{solution}
-        ?
+        Assim teremos:
+        \begin{equation*}
+            \begin{split}
+                max & = 95.4 \\
+                min & = 50.7 \\
+            \end{split}
+        \end{equation*}
+
+        Primeiro quartil $Q_{0.25}$:
+        \begin{equation*}
+            \begin{split}
+                p_{25} & = 0.25 \times (29 +1) = 0.25 \times 30 = 7.5 \\
+                \therefore Q_{0.25} & \in [x_7, x_8] \\
+                \therefore Q_{0.25} & = 0.5 \times 54.1 + 0.5 \times 55.3 = 54.7
+            \end{split}
+        \end{equation*}
+
+        Segundo quartil (mediana) $Q_{0.50} = M_d$:
+        \begin{equation*}
+            \begin{split}
+                p_{50} & = 0.50 \times (29 +1) = 0.50 \times 30 = 15 \\
+                \therefore Q_{0.50} & = x_{15} = 69.5 \\
+            \end{split}
+        \end{equation*}
+
+        Terceiro quartil $Q_{0.75}$:
+        \begin{equation*}
+            \begin{split}
+                p_{75} & = 0.75 \times (29 +1) = 0.75 \times 30 = 22.5 \\
+                \therefore Q_{0.75} & \in [x_{22}, x_{23}] \\
+                \therefore Q_{0.75} & = 0.5 \times 77.8 + 0.5 \times 78.5 = 78.15
+            \end{split}
+        \end{equation*}
+
+        Assim temos o box-plot:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=8cm]{./../src/output/03212024_Output_BoxPlotDurezaAluminio.pdf}
+        \end{figure}
     \end{solution}
 \end{parts}
