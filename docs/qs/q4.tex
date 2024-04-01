@@ -2,7 +2,22 @@
 \begin{parts}
     \part Represente os dados por meio de uma gráfico de ramos-e-folhas.
     \begin{solution}
-        ?
+        Gráfico de Ramo-e-Folhas construido para valores inteiros(truncados) dos dados:
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{r|l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}l@{\hspace{4 pt}}}
+                5 & 1 & 1 & 2 & 3 & 3 & 4 & 4 \\
+                5 & 5 & 6 & 6                 \\
+                6 & 0 & 4 & 4                 \\
+                6 & 7 & 9                     \\
+                7 & 0 & 0 & 1 & 1 & 2 & 3 & 4 \\
+                7 & 8 & 9                     \\
+                8 & 3 & 3 & 4                 \\
+                8 & 6 & 8                     \\
+                9                             \\
+                9 & 5                         \\
+            \end{tabular}
+        \end{table}
     \end{solution}
     \part Represente os dados por meio de uma distribuição de frequências.
     \begin{solution}
@@ -111,7 +126,7 @@
             \includegraphics[width=8cm]{./../src/output/03212024_Output_HistogramaDurezaAluminio.pdf}
         \end{figure}
     \end{solution}
-    \part Faça o box-plot \footnote{Gráfico que relaciona medidas descritivas: máximo, mínimo, mediana (segundo quartil), primeiro e terceiro quartil} dos dados. Existem outliers?
+    \part Faça o box-plot \footnote{Gráfico que relaciona medidas descritivas: máximo, mínimo, mediana (segundo quartil), primeiro e terceiro quartil} dos dados. Existem outliers \footnote{Valores discrepantes baseados em um limite superior e inferior}?
     \begin{solution}
         Assim teremos:
         \begin{equation*}
@@ -124,8 +139,8 @@
         Primeiro quartil $Q_{0.25}$:
         \begin{equation*}
             \begin{split}
-                p_{25} & = 0.25 \times (29 +1) = 0.25 \times 30 = 7.5 \\
-                \therefore Q_{0.25} & \in [x_7, x_8] \\
+                p_{25}              & = 0.25 \times (29 +1) = 0.25 \times 30 = 7.5 \\
+                \therefore Q_{0.25} & \in [x_7, x_8]                               \\
                 \therefore Q_{0.25} & = 0.5 \times 54.1 + 0.5 \times 55.3 = 54.7
             \end{split}
         \end{equation*}
@@ -133,16 +148,16 @@
         Segundo quartil (mediana) $Q_{0.50} = M_d$:
         \begin{equation*}
             \begin{split}
-                p_{50} & = 0.50 \times (29 +1) = 0.50 \times 30 = 15 \\
-                \therefore Q_{0.50} & = x_{15} = 69.5 \\
+                p_{50}              & = 0.50 \times (29 +1) = 0.50 \times 30 = 15 \\
+                \therefore Q_{0.50} & = x_{15} = 69.5                             \\
             \end{split}
         \end{equation*}
 
         Terceiro quartil $Q_{0.75}$:
         \begin{equation*}
             \begin{split}
-                p_{75} & = 0.75 \times (29 +1) = 0.75 \times 30 = 22.5 \\
-                \therefore Q_{0.75} & \in [x_{22}, x_{23}] \\
+                p_{75}              & = 0.75 \times (29 +1) = 0.75 \times 30 = 22.5 \\
+                \therefore Q_{0.75} & \in [x_{22}, x_{23}]                          \\
                 \therefore Q_{0.75} & = 0.5 \times 77.8 + 0.5 \times 78.5 = 78.15
             \end{split}
         \end{equation*}
@@ -152,5 +167,16 @@
             \centering
             \includegraphics[width=8cm]{./../src/output/03212024_Output_BoxPlotDurezaAluminio.pdf}
         \end{figure}
+
+        Para a análise de \textbf{outliers} temos o \textbf{limite superior} $LS = Q_3 + (1.5)d_q$ e \textbf{limite inferior} $LI = Q_1 - (1.5)d_q$, onde $d_q = Q_3 - Q_1$ ou \textbf{distância interquartil}:
+        \begin{equation*}
+            \begin{split}
+                d_q & = 78.15 - 54.7 = 23.45                                  \\
+                LS  & = 78.15 + (1.5 \times 23.45) = 78.15 + 35.175 = 113.325 \\
+                LI  & = 54.7 - (1.5 \times 23.45) = 54.7 - 35.175 = 19.525
+            \end{split}
+        \end{equation*}
+
+        Assim, dado os valores encontrados para $LS$ e $LI$ não temos \textbf{outliers} na amostra.
     \end{solution}
 \end{parts}

@@ -2,8 +2,9 @@ library(xtable)
 library(ggplot2)
 data <- read.csv("./data/durezaAluminio.csv")
 fd_simp <- data.frame(data)
+print(sort(fd_simp$Dureza))
 # Ramos e folhas
-# stem(data$Dureza, scale = 2)
+stem(data$Dureza)
 
 # DIstribuição de frequências simples
 print(xtable(data.frame(table(data)), type = "latex"), file = "./output/03212024_Output_DistribuicaoFrequenciaSimplesDurezaAluminio.tex")
