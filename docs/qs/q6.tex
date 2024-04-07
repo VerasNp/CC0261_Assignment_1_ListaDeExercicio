@@ -1,4 +1,4 @@
-\question Vinte e seis trabalhadores de plataformas de petr´oleo offshore participaram de um exercício de fuga simulado, resultando nos dados a seguir (em segundos) para concluir a fuga:
+\question Vinte e seis trabalhadores de plataformas de petróleo offshore participaram de um exercício de fuga simulado, resultando nos dados a seguir (em segundos) para concluir a fuga:
 \begin{parts}
     \part  Construa um diagrama de ramos-e-folhas dos dados. Como ele sugere que a média e mediana serão comparadas?
     \begin{solution}
@@ -24,9 +24,14 @@
         \begin{equation*}
             \begin{split}
                 \overline{X} & = 370.6923 \\
-                M_d          & = 369.5
+                M_d          & = 369.5 \\ 
+                \text{ou ainda} \ P_{50} & = 0.5 \times (n+1) \\
+                P_{50} = 0.5 \times 27 & = 13.5 \\
+                \therefore M_d & = \frac{x_{13} + x_{14}}{2} = \frac{369 + 370}{2} = 369.5
             \end{split}
         \end{equation*}
+
+        Quando temos um efeito como esse (mediana próxima da média), temos que a distribuição é simétrica.
     \end{solution}
 
     \part   Calcule os valores da média ($\overline{x}$) e da mediana ($M_d$) amostrais. Dica: $\sum{xi} = 9638$.
@@ -60,11 +65,11 @@
 
     \part Quais são os valores de $\overline{x}$ e $M_d$ quando as observações são expressas em minutos?
     \begin{solution}
-        Ao transformar todos os valores em minutos, teremos:
+        Uma das propriedades da média é que ao multiplicar seus valores por uma constante, o resultado também será multiplicado por essa constante, mesmo comportamento observado na mediada, assim:
         \begin{equation*}
             \begin{split}
-                \overline{X} & = 6.178077 \\
-                M_d          & = 6.155
+                \overline{X} & = 370.6923 \times \frac{1}{60} = 6.178 \\
+                M_d          & = 369.5 \times \frac{1}{60} = 6.158 \\ 
             \end{split}
         \end{equation*}
     \end{solution}
