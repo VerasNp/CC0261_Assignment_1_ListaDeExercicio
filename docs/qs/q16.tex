@@ -1,0 +1,61 @@
+\question Em uma granja foi observada a distribuição dos frangos em relação ao peso, que era a
+seguinte
+
+\begin{parts}
+    \part Qual a média da distribuição?
+    \begin{solution}
+        \begin{equation*}
+            \begin{split}
+                \overline{X} & = \frac{\sum\limits^{n}_{i=1}{x_i}}{n}               \\
+                             & = \frac{60+160+280+260+160+80}{6} = \frac{1000}{6} = \\
+                \overline{X} & = 166.67
+            \end{split}
+        \end{equation*}
+    \end{solution}
+
+    \part Qual a variância\footnote{\href{https://pt.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap/more-standard-deviation/v/another-simulation-giving-evidence-that-n-1-gives-us-an-unbiased-estimate-of-variance}{Motivo pelo qual dividimos por $n - 1$.}} da distribuição?
+    \begin{solution}
+        \begin{equation*}
+            \begin{split}
+                S^2 & = \frac{1}{n - 1} \Bigg[\sum\limits^{n}_{i = 1}{(x_i - \overline{x})^2}\Bigg] =       \\
+                    & = \frac{1}{5} \Bigg[ 11378.49 + 44.49 + 12843.69 + 8710.49 + 44.49 + 7511.69 \Bigg] = \\
+                S^2 & = 8106.67
+            \end{split}
+        \end{equation*}
+    \end{solution}
+
+    \part Queremos dividir os frangos em quatro categorias, em relação ao peso, de modo que:
+    \begin{itemize}
+        \item os $20\%$ mais leves sejam da categoria D;
+        \item os $30\%$ seguintes sejam da categoria C;
+        \item os $30\%$ seguintes sejam da categoria B;
+        \item os $20\%$ seguintes (ou seja, os $20\%$ mais pesados) sejam da categoria A.
+    \end{itemize}
+    Quais  os limites de peso entre as categorias A, B, C e D?
+    \begin{solution}
+        Essa pergunta está relacionada a parte de \textbf{quantis}, para facilitar teremos de calcular a frequência relativa e acumulada, o que teremos:
+        % latex table generated in R 4.3.3 by xtable 1.8-4 package
+        % Sun Apr  7 21:18:50 2024
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{rrr}
+                \hline
+                  & FreqRel & FreqAcum \\
+                \hline
+                1 & 0.06    & 0.06     \\
+                2 & 0.16    & 0.22     \\
+                3 & 0.28    & 0.50     \\
+                4 & 0.26    & 0.76     \\
+                5 & 0.16    & 0.92     \\
+                6 & 0.08    & 1.00     \\
+                \hline
+            \end{tabular}
+        \end{table}
+        Para encontrar os limites de peso vamos utilizar a fórmula de quantis em distribuições com classe, isto é:
+    \end{solution}
+
+    \part O granjeiro decide separar desse lote os animais com peso inferior a dois desvios padrões abaixo da média para receberem ração reforçada, e também separar os ani- mais com peso superior a um e meio desvio padrão acima da média para usá-los como reprodutores. Qual a porcentagem de animais que serão separados em cada caso?
+    \begin{solution}
+        ?
+    \end{solution}
+\end{parts}

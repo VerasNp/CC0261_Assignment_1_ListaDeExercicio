@@ -1,0 +1,73 @@
+\question A seguir temos a distribuição das estaturas de 100 alunos de uma classe.
+\ifprintanswers
+    \savenotes
+\fi
+\begin{parts}
+    \part A estatura média.
+    \begin{solution}
+        \begin{equation*}
+            \begin{split}
+                \overline{X} & = \frac{\sum\limits^{n}_{i=1}{x_i}}{n}; x_i \text{ sendo o ponto médio de cada classe}                      \\
+                             & = \frac{1}{100} \Bigg[ ((1.40 + 1.50) \times 0.5) + ((1.50 + 1.60) \times 0.5) + ((1.60 + 1.70) \times 0.5) \\
+                             & + ((1.70 + 1.80) \times 0.5) + ((1.80 + 1.90) \times 0.5) + ((1.90 + 2.00) \times 0.5) \Bigg]               \\
+                             & = \frac{1}{100} \Bigg[ 1.45 + 1.55 + 1.65 + 1.75 + 1.85 + 1.95 \Bigg] = \frac{10.20}{100} = 1.62
+            \end{split}
+        \end{equation*}
+    \end{solution}
+
+    \part A estatura modal (utilizando o método de Czuber\footnote{Uma aproximação mais refinada, onde o ponto da moda que divide o intervalo em duas partes é proporcional a diferenças entre a frequência da classe modal e as respectivas classes adjacentes}).
+    \begin{solution}
+        Para calcularmos a moda utilizando o método de Czuber, temos que:
+        \begin{equation*}
+            \begin{split}
+                M_o = l_i + \frac{h(n_i - n_{i-1})}{(n_i - n_{i-1}) + (n_i - n_{i+1})}
+            \end{split}
+        \end{equation*}
+        Sendo a maior frequência $40$, então o intervalo modal\footnote{Classe de maior frequência} será $1.70 \vdash 1.80$, assim teremos:
+        \begin{equation*}
+            \begin{split}
+                M_o & = 1.70 + \frac{0.10(40 - 30)}{(40 - 30) + (40 - 10)} = 1.70 + \frac{1}{40} = 1.73
+            \end{split}
+        \end{equation*}
+    \end{solution}
+
+    \part A estatura mediana.
+    \begin{solution}
+        Nesse caso, por se tratar de uma distribuição de frequência com classes, temos que:
+        \begin{equation*}
+            \begin{split}
+                M_d & = l_i + h \times \Bigg(\frac{\frac{\sum{f_i}}{2} - F_{i-1}}{n_i}\Bigg)
+            \end{split}
+        \end{equation*}
+        Para isso façamos a relação das frequências relativas e relativa acumulada:
+        % latex table generated in R 4.3.3 by xtable 1.8-4 package
+        % Sun Apr  7 23:45:12 2024
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{rrrr}
+                \hline
+                Classe & freqAcum & freqReq & freqRelAcum \\
+                \hline
+                1      & 5        & 0.05    & 0.05        \\
+                2      & 15       & 0.10    & 0.15        \\
+                3      & 45       & 0.30    & 0.45        \\
+                4      & 85       & 0.40    & 0.85        \\
+                5      & 95       & 0.10    & 0.95        \\
+                6      & 100      & 0.05    & 1.00        \\
+                \hline
+            \end{tabular}
+        \end{table}
+
+        A partir dessa tabela podemos perceber que nossa classe da mediana será da classe de número $4$, ou seja $1.70 \vdash 1.80$, assim temos:
+        \begin{equation*}
+            \begin{split}
+                M_d & = 1.70 + 0.10 \times \frac{\frac{5+10+30+40+10+5}{2} - 45}{40} = \\
+                    & = 1.70 + 0.10 \times \frac{50 -45}{40} =                         \\
+                    & = 1.70 + 0.10 \times \frac{5}{40} = 1.70 + 0.0125 = 1.71
+            \end{split}
+        \end{equation*}
+    \end{solution}
+\end{parts}
+\ifprintanswers
+    \spewnotes
+\fi
