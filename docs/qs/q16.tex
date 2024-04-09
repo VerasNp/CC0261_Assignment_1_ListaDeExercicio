@@ -4,11 +4,12 @@ seguinte
 \begin{parts}
     \part Qual a média da distribuição?
     \begin{solution}
+        Por se tratar de uma \textbf{distribuição por classe}, temos que a média é dada por:
         \begin{equation*}
             \begin{split}
-                \overline{X} & = \frac{\sum\limits^{n}_{i=1}{x_i}}{n}               \\
-                             & = \frac{60+160+280+260+160+80}{6} = \frac{1000}{6} = \\
-                \overline{X} & = 166.67
+                \overline{X} & = \frac{\sum\limits^{k}_{i=1}{n_i \times x_i}}{n}, \text{onde } x_i \text{ é} \textbf{ média da classe modal.}                     \\
+                             & = \frac{(60 \times 970) + (160 \times 990) + (280 \times 1010) + (260 \times 1030) + (160 \times 1050) + (80 \times 1070)}{1000} = \\
+                \overline{X} & = \frac{1020800}{1000} = 1020.8
             \end{split}
         \end{equation*}
     \end{solution}
@@ -17,9 +18,7 @@ seguinte
     \begin{solution}
         \begin{equation*}
             \begin{split}
-                S^2 & = \frac{1}{n - 1} \Bigg[\sum\limits^{n}_{i = 1}{(x_i - \overline{x})^2}\Bigg] =       \\
-                    & = \frac{1}{5} \Bigg[ 11378.49 + 44.49 + 12843.69 + 8710.49 + 44.49 + 7511.69 \Bigg] = \\
-                S^2 & = 8106.67
+                S^2 & = \frac{1}{n - 1} \Bigg[\sum\limits^{k}_{i = 1}{n_i(x_i - \overline{x})^2}\Bigg], \text{onde } x_i \text{ é} \textbf{ média da classe modal.} \\
             \end{split}
         \end{equation*}
     \end{solution}

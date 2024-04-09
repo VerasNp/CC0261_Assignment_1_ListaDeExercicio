@@ -1,9 +1,6 @@
 library(xtable)
 data <- read.csv("./../data/frangosPeso.csv")
 
-data_mean <- mean(data$freq)
-print(paste("Mean: ", data_mean))
-
 desvios <- data$freq - data_mean
 variance_from_scratch <- sum(desvios^2) / (length(data$freq) - 1)
 print(paste("Variance from scratch: ", variance_from_scratch))
