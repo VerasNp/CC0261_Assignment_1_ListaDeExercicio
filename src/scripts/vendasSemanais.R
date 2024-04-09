@@ -1,10 +1,15 @@
-library(xtable)
-data <- read.csv("./../data/vendasSemanais.csv")
+# Define breaks and frequencies
+breaks <- c(30, 35, 40, 45, 50, 55, 60, 65, 70)
+data <- read.csv("./data/vendasSemanais.csv")
+max_data <- max(data$freq)
 
-freq_rel_table <- data.frame(
-    freqAcum = cumsum(data$freq),
-    freqReq = (data$freq / sum(data$freq)),
-    freqRelAcum = cumsum((data$freq) / sum(data$freq))
-)
+pdf(file = "./output/04092024_Output_BoxPlotVendasSemanais.pdf")
+# Create an empty plot
+p <- plot(1, type="n", xlim=c(30, max(breaks)), ylim=c(0, max_data), 
+     xlab="Value", ylab="Frequency", main="Histogram")
 
-print(xtable(freq_rel_table, type = "latex"), file = "./../output/04082024_Output_TabelaFrequenciasAcumRelRelAcumVendasSemanais.tex")
+# Plot rectangles representing the bins
+for (i in 1:length(breaks)) {
+  rect(breaks[i], 0, breaks[i+1], data$freq[i])
+}
+dev.off()
